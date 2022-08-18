@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48;
+          font-size: 50px !important;
+          transition: .4s;
+            cursor: pointer;
+        }
+        span:hover{
+            font-size: 60px !important;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            font-family: 'Rubik', sans-serif;
+        }
+        html, body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        video{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .text{
+            position: relative;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+        h1{
+            background:repeating-linear-gradient(white,white 2px, transparent 2px, transparent 3px) ;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 70px;
+        }
+        button{
+            fill: aqua;
+        }
+        h4{
+            font-size: 30px;
+        }
+        input{
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+        }
+        input:checked ~ label span{
+            color: red !important;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="./y2mate.com - COSTA RICA IN 4K 60fps HDR ULTRA HD_480p.mp4">
+    </video>
+    <div class="text">
+    <input type="checkbox" id="like">
+        <h1>TEXT TITTLE</h1>
+        <h4>Salom bro like bosib qo'y</h4>
+        <label for="like">
+        <span class="material-symbols-outlined">
+            favorite
+            </span></label>
+    </div>
+</body>
+</html>
